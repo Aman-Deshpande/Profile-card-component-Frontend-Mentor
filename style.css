@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: hsl(185, 75%, 39%);
+}
+
+.container > .topimg{
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    left: -3vw;
+    top: -50vh;
+}
+
+.container > .btmimg{
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    right: -5vw;
+    top: 40vh
+}
+
+.container > .main-card{
+    z-index: 1;
+    background: white;
+    border-radius: 15px;
+    height: 45vh;
+    width: 20vw;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.container .main-card .topcardimg > img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.container .main-card .victorimg > img{
+    position: absolute;
+    left: 37%;
+    top: 26%;
+    border-radius: 50%;
+}
+
+.container .main-card .name > .nameage{
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    top: 55%;
+    left: 33%;;
+}
+
+.container .main-card .name .nameage > h3, p{
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h3{
+    font-weight: 700;
+}
+
+.city{
+    position: absolute;
+    top: 63%;
+    left: 40%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.line{
+    width: 20vw;
+    height: 0.5px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 25%;
+    background: black;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    left: 10%;
+}
+
+.eightk, .eightthreek, .onek{
+    font-weight: 700;
+}
+
+.footer > p{
+    font-weight: 200;
+    font-size: 18px;
+    opacity: 0.5;
+}
